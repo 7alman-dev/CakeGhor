@@ -38,3 +38,8 @@ npm run dev
 ```powershell
 npm run build
 ```
+
+To publish the site, deploy the generated `dist/` folder to your static hosting
+provider. For a provider with separate build settings, use `npm run build` as
+the build command and `dist` as the output directory. Do not deploy the project
+source or open `index.html` directly; Vite must compile the React entry point.
