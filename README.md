@@ -43,3 +43,8 @@ To publish the site, deploy the generated `dist/` folder to your static hosting
 provider. For a provider with separate build settings, use `npm run build` as
 the build command and `dist` as the output directory. Do not deploy the project
 source or open `index.html` directly; Vite must compile the React entry point.
+
+GitHub Pages deployment is automated by `.github/workflows/deploy.yml` on every
+push to `main`. In the repository's **Settings → Pages**, set the build and
+deployment source to **GitHub Actions**. The project is published at
+`https://7alman-dev.github.io/CakeGhor/`.
